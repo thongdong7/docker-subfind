@@ -1,0 +1,5 @@
+src: [/data/movies, /data/tv-shows]
+lang: [vi, en]
+force: false
+remove: false
+verbose: false

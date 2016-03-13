@@ -1,0 +1,10 @@
+app:
+  build: .
+  volumes:
+    - ./subfind.yml:/subfind.yml:ro
+    # Mount movies, tv-shows folder into /data folders
+    - /data2/movies:/data/movies
+    - /data2/tv-shows:/data/tv-shows
+  log_opt:
+    max-size: 10k
+  restart: always
